@@ -1,0 +1,4 @@
+A simple web site in MVC3 using jQuery Mobile that allows to create new users and their addresses. 
+A user can have multiple addresses therefore there is a simple one-2-many relationship.
+The Users and their addresses are stored in a SQL database, using an Entity Framework code first model to create, 
+retrieve, update and delete users (CRUD).
