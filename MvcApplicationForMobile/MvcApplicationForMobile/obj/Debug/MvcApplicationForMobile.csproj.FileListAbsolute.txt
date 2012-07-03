@@ -1,0 +1,14 @@
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\MvcApplicationForMobile.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\MvcApplicationForMobile.pdb
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\EntityFramework.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\EntityFramework.xml
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\obj\Debug\MvcApplicationForMobile.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\obj\Debug\MvcApplicationForMobile.pdb
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\Elmah.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\FiftyOne.Foundation.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\Microsoft.Web.Infrastructure.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\DataAnnotationsExtensions.ClientValidation.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\DataAnnotationsExtensions.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\WebActivator.dll
+C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\System.Data.SqlServerCe.dll

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MvcApplicationForMobile.Models.User>
+@{
+    ViewBag.Title = "All Users";
+
+    ViewBag.TopLeftBtnClass = "itemHidden";
+
+    ViewBag.TopRightBtnClass = "itemVisible";
+    ViewBag.TopRightBtnLink = "/User/Create";
+
+    ViewBag.FooterText = Model.Count() == 1 ? Model.Count().ToString() + " User" : Model.Count().ToString() + " Users";
+
+    string firstLetter = "";
+}
+<p class="error">@ViewBag.ErrorMessage</p>
+<ul data-role="listview" data-filter="true" data-inset="true">
+    @foreach (var item in Model)
+    {
+        if (item.FirstName.Substring(0, 1).ToUpper() != firstLetter.ToUpper())
+        {
+            firstLetter = item.FirstName.Substring(0, 1);
+        <li data-role="list-divider">@firstLetter.ToUpper()</li>
+        }
+        <li>
+            @Html.ActionLink(item.FullName, "Edit", new { id = item.UserID })
+        </li>
+    }
+</ul>
+
+<div class="buttonBar">
+<h4>@ViewBag.FooterText</h4>
+</div>
+

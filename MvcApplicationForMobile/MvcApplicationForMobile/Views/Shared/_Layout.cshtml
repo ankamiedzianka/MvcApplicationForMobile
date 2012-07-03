@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Users App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="stylesheet" href="../../Content/Site.min.css" />
+</head>
+<body>
+    <div data-role="page" data-theme="a" @TempData["DataUrl"]>
+        <div data-role="header" data-position="fixed">
+            <a href="@ViewBag.TopLeftBtnLink" data-role="button" data-icon="back" class="@ViewBag.TopLeftBtnClass">
+                Back</a>
+            <h1>@ViewBag.Title</h1>
+            <a href="@ViewBag.TopRightBtnLink" data-role="button" data-icon="add" class="@ViewBag.TopRightBtnClass" data-theme="b">
+                Add</a>
+        </div>
+        <!-- /header -->
+        <div data-role="content">
+            @RenderBody()
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="deleteAddress">
+        <div data-role="header">
+            <h1>
+                Are you sure?
+            </h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content">
+            @using (Html.BeginForm("Delete", "Address"))
+            {
+             
+                <input type="hidden" name="AddressToDeleteID" id="AddressToDeleteID" />
+                <input type="hidden" name="UserID" id="UserID" />
+                <input type="submit" value="Delete" data-icon="delete" data-theme="b" /> 
+                <a href="" data-role="button" data-rel="back" data-theme="a" data-icon="back">Cancel</a>   
+            }
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="deleteUser">
+        <div data-role="header">
+            <h1>
+                Are you sure?
+            </h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content">
+            @using (Html.BeginForm("Delete", "User"))
+            {
+                <input type="hidden" name="UserToDeleteID" id="UserToDeleteID" />
+                <input type="submit" value="Delete" data-icon="delete" data-theme="b" /> 
+                <a href="" data-role="button" data-rel="back" data-theme="a" data-icon="back">Cancel</a>   
+            }
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /page -->
+</body>
+</html>
