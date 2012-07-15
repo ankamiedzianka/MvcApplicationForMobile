@@ -25,6 +25,9 @@ namespace MvcApplicationForMobile.Models
         [DataAnnotationsExtensions.Email]
         public string Email { get; set; }
 
+        [Timestamp]
+        public Byte[] Timestamp { get; set; }
+
         public virtual ICollection<Address> Addresses { get; set; }
 
         public string FullName
@@ -34,5 +37,7 @@ namespace MvcApplicationForMobile.Models
                 return FirstName + " " + LastName;
             }
         }
+
+       
     }
 }

@@ -34,9 +34,8 @@
         <div data-role="content">
             @using (Html.BeginForm("Delete", "Address"))
             {
-             
+                <input type="hidden" name="TimestampAddressToDelete" id="TimestampAddressToDelete" />
                 <input type="hidden" name="AddressToDeleteID" id="AddressToDeleteID" />
-                <input type="hidden" name="UserID" id="UserID" />
                 <input type="submit" value="Delete" data-icon="delete" data-theme="b" /> 
                 <a href="" data-role="button" data-rel="back" data-theme="a" data-icon="back">Cancel</a>   
             }
@@ -54,6 +53,7 @@
         <div data-role="content">
             @using (Html.BeginForm("Delete", "User"))
             {
+                <input type="hidden" name="TimestampToDelete" id="TimestampToDelete" />
                 <input type="hidden" name="UserToDeleteID" id="UserToDeleteID" />
                 <input type="submit" value="Delete" data-icon="delete" data-theme="b" /> 
                 <a href="" data-role="button" data-rel="back" data-theme="a" data-icon="back">Cancel</a>   

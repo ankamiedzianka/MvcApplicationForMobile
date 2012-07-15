@@ -30,6 +30,17 @@ namespace MvcApplicationForMobile.Models
         [MaxLength(50, ErrorMessage = "Country cannot be longer than 10 characters.")]
         public string Country {get; set;}
 
+        [Timestamp]
+        public Byte[] Timestamp { get; set; }
+
         public virtual User User { get; set; }
+
+        public string FullAddress
+        {
+            get
+            {
+                return Line1 + " " + Line2 + " " + PostCode + " " + Country;
+            }
+        }
     }
 }

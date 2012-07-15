@@ -13,13 +13,13 @@
 <p class="error">@ViewBag.ErrorMessage</p>
 @using (Html.BeginForm())
 {
-    @Html.ValidationSummary(true)
+    <div class="error">@Html.ValidationSummary(true)</div>
     <fieldset>
-    @Html.HiddenFor(model => model.UserID)
-    @Html.HiddenFor(model => model.AddressID)
-    @Html.HiddenFor(model => model.DateAdded)
-    @Html.HiddenFor(model => model.IsDeleted)
-   
+        @Html.HiddenFor(model => model.UserID)
+        @Html.HiddenFor(model => model.AddressID)
+        @Html.HiddenFor(model => model.DateAdded)
+        @Html.HiddenFor(model => model.IsDeleted)
+        @Html.HiddenFor(model => model.Timestamp)
         <div class="editor-label">
             @Html.LabelFor(model => model.Line1)
         </div>
@@ -49,11 +49,23 @@
             @Html.ValidationMessageFor(model => model.Country)
         </div>
     </fieldset>
-     <p class="buttonBar">
-        <input type="submit" value="Save Changes" data-icon="check" data-inline="true" data-theme="b"/>
-        <a href="#deleteAddress" data-role="button"  data-rel="dialog" data-inline="true" data-icon="delete" >Delete Address</a>
+    if (ViewBag.ButtonsDisabled != true)
+    {
+    <p class="buttonBar">
+        <input type="submit" value="Save Changes" data-icon="check" data-inline="true" data-theme="b" />
+        <a href="#deleteAddress" data-role="button" data-rel="dialog" data-inline="true"
+            data-icon="delete"  onclick="$('#AddressToDeleteID').val('@Model.AddressID'); $('#TimestampAddressToDelete').val($('#Timestamp').val())">Delete Address</a>
     </p>
-    
-     
-   
+    }
+}
+@if (ViewBag.ConfirmDeletionButton == true)
+{
+using (Html.BeginForm("Delete","Address"))
+    { 
+    <input type="hidden" name="AddressToDeleteID" id="AddressToDeleteID" value="@Model.AddressID"/>
+    <input type="hidden" name="DeleteConfirmed" id="DeleteConfirmed" value="1" />
+    <p class="buttonBar">
+        <input type="submit" value="Confirm Deletion" data-icon="delete" data-theme="b" data-inline="true" />
+    </p>
+    }
 }

@@ -6,13 +6,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcApplicationForMobile.Models;
+using System.Data.Entity.Infrastructure;
 
 namespace MvcApplicationForMobile.Controllers
 {
     public class AddressController : Controller
     {
         private UserContext db = new UserContext();
-        private string defaultErrorMessage = "Unable to save changes.";
+        private string defaultErrorMessage = "Error occurred.";
 
         public ActionResult Create(int userID, bool? errorOccurred)
         {
@@ -50,13 +51,22 @@ namespace MvcApplicationForMobile.Controllers
             return View(address);
         }
 
-        public ActionResult Edit(int id, bool? errorOccurred)
+        public ActionResult Edit(int id)
         {
-            Address address = db.Addresses.Find(id);
-            if (errorOccurred.GetValueOrDefault())
+            if (id == 0)
             {
-                ViewBag.ErrorMessage = defaultErrorMessage;
+                TempData["DataUrl"] = "data-url=/User";
+                return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
+
+            Address address = db.Addresses.Find(id);
+
+            if (address.IsDeleted == true)
+            {
+                ModelState.AddModelError(string.Empty, "The record has been already deleted by another user. Click the Back button.");
+                ViewBag.ButtonsDisabled = true;
+            }
+
             return View(address);
         }
 
@@ -65,10 +75,12 @@ namespace MvcApplicationForMobile.Controllers
         {
             try
             {
+                address.User = db.Users.Where(u => u.UserID == address.UserID).Single();
+
                 if (ModelState.IsValid)
                 {
                     address.DateModified = DateTime.Now;
-
+                    
                     db.Entry(address).State = EntityState.Modified;
                     db.SaveChanges();
 
@@ -76,19 +88,57 @@ namespace MvcApplicationForMobile.Controllers
                     return RedirectToAction("Edit", "User", new { id = address.UserID });
                 }
             }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                var entry = ex.Entries.Single();
+                var databaseValues = (Address)entry.GetDatabaseValues().ToObject();
+                var clientValues = (Address)entry.Entity;
+
+                if (databaseValues.IsDeleted == true)
+                {
+                    ModelState.AddModelError(string.Empty, "The record has been already deleted by another user. Click the Back button.");
+                    ViewBag.ButtonsDisabled = true;
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "The record was modified by another user. "
+                    + "Please confirm the Save operation or click the Back button.");
+
+                    if (databaseValues.Country != clientValues.Country)
+                        ModelState.AddModelError("Country", "Current value: " + databaseValues.Country);
+                    if (databaseValues.Line1 != clientValues.Line1)
+                        ModelState.AddModelError("Line1", "Current value: " + databaseValues.Line1);
+                    if (databaseValues.Line2 != clientValues.Line2)
+                        ModelState.AddModelError("Line2", "Current value: " + databaseValues.Line2);
+                    if (databaseValues.PostCode != clientValues.PostCode)
+                        ModelState.AddModelError("PostCode", "Current value: " + databaseValues.PostCode);
+                }
+
+                address.Timestamp = databaseValues.Timestamp;
+
+                return View("Edit", address);
+            }
             catch (DataException)
             {
-                TempData["DataUrl"] = "data-url=/User/Edit/" + address.AddressID;
-                return RedirectToAction("Edit", "User", new { id = address.AddressID, errorOccurred = true });
+                ModelState.AddModelError(string.Empty, defaultErrorMessage);
             }
             return View(address);
+        }
+
+        public ActionResult Delete()
+        {
+            return View();
         }
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(FormCollection formCollection)
         {
             int addressID = 0;
-            int userID = 0;
+            
+            Byte[] timestamp = new Byte[8];
+            bool deleteConfirmed = false;
+
+            Address address = new Address();
 
             try
             {
@@ -96,29 +146,67 @@ namespace MvcApplicationForMobile.Controllers
                 {
                     switch (_formData)
                     {
-                        case "AddressID":
+                        case "AddressToDeleteID":
                             addressID = int.Parse(formCollection[_formData]);
                             break;
-                        case "UserID":
-                            userID = int.Parse(formCollection[_formData]);
+                        case "TimestampAddressToDelete":
+                            timestamp = Convert.FromBase64String(formCollection[_formData]);
+                            break;
+                        case "DeleteConfirmed":
+                            deleteConfirmed = true;
                             break;
                     }
                 }
 
-                Address address = db.Addresses.Find(addressID);
-                address.DateModified = DateTime.Now;
+                address = db.Addresses.Find(addressID);
+
+                if (address.IsDeleted == true)
+                {
+                    ModelState.AddModelError(string.Empty, "The record has been already deleted by another user. Click 'Back' button.");
+                    ViewBag.ButtonsDisabled = true;
+                    return View("Edit", address);
+                }
+
+                if ((!address.Timestamp.SequenceEqual(timestamp)) && (!deleteConfirmed))
+                {
+                    ModelState.AddModelError(string.Empty, "The record was modified by another user. "
+                        + "Please confirm the Delete operation or click the Back button.");
+                    ViewBag.ButtonsDisabled = true;
+                    ViewBag.ConfirmDeletionButton = true;
+                    return View("Edit", address);
+                }
+
+                address.Timestamp = timestamp;
                 address.IsDeleted = true;
+                address.DateModified = DateTime.Now;
+
+                db.Entry(address).State = EntityState.Modified;
                 db.SaveChanges();
 
             }
-            catch (DataException)
+            catch (DbUpdateConcurrencyException ex)
+            {
+                var entry = ex.Entries.Single();
+                var databaseValues = (Address)entry.GetDatabaseValues().ToObject();
+                var clientValues = (Address)entry.Entity;
+
+                ModelState.AddModelError(string.Empty, "The record was modified by another user. "
+                + "The current values have been displayed. "
+                + "Please confirm the Delete operation or click the Back button.");
+
+                address.Timestamp = databaseValues.Timestamp;
+
+                return View("Edit", address);
+
+            }
+            catch
             {
                 TempData["DataUrl"] = "data-url=/Address/Edit/" + addressID;
                 return RedirectToAction("Edit", "Address", new { id = addressID, errorOccurred = true });
             }
 
-            TempData["DataUrl"] = "data-url=/User/Edit/" + userID;
-            return RedirectToAction("Edit", "User", new { id = userID });
+            TempData["DataUrl"] = "data-url=/User/Edit/" + address.User.UserID;
+            return RedirectToAction("Edit", "User", new { id = address.User.UserID });
         }
 
         protected override void Dispose(bool disposing)
