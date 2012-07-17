@@ -9,13 +9,23 @@ using MvcApplicationForMobile.Models;
 using System.Data.Entity.Infrastructure;
 using System.Text;
 using System.Data.Entity.Validation;
+using MvcApplicationForMobile.DAL;
 
 namespace MvcApplicationForMobile.Controllers
 {
     public class UserController : Controller
     {
-        private UserContext db = new UserContext();
+        private IUserRepository userRepository;
         private string defaultErrorMessage = "Error occurred.";
+
+        public UserController()
+        {
+            this.userRepository = new UserRepository(new UserContext());
+        }
+        public UserController(IUserRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
 
         public ViewResult Index(bool? errorOccurred)
         {
@@ -23,7 +33,10 @@ namespace MvcApplicationForMobile.Controllers
             {
                 ViewBag.ErrorMessage = defaultErrorMessage;
             }
-            return View(db.Users.Where(u => u.IsDeleted == false || u.IsDeleted == null).OrderBy(u => u.FirstName).ThenBy(u => u.LastName).ToList());
+
+            var users = userRepository.GetUsers();
+
+            return View(users);
         }
 
         public ActionResult Create()
@@ -38,10 +51,8 @@ namespace MvcApplicationForMobile.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    user.DateAdded = DateTime.Now;
-
-                    db.Users.Add(user);
-                    db.SaveChanges();
+                    userRepository.InsertUser(user);
+                    userRepository.Save();
 
                     TempData["DataUrl"] = "data-url=/User";
                     return RedirectToAction("Index");
@@ -62,7 +73,7 @@ namespace MvcApplicationForMobile.Controllers
                 return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
 
-            User user = db.Users.Find(id);
+            User user = userRepository.GetUserByID(id);
 
             if (errorOccurred.GetValueOrDefault())
             {
@@ -83,14 +94,10 @@ namespace MvcApplicationForMobile.Controllers
         {
             try
             {
-                user.Addresses = db.Addresses.Where(a => a.UserID == user.UserID && a.IsDeleted == false).ToList();
-
                 if (ModelState.IsValid)
                 {
-                    user.DateModified = DateTime.Now;
-                    
-                    db.Entry(user).State = EntityState.Modified;
-                    db.SaveChanges();
+                    userRepository.UpdateUser(user);
+                    userRepository.Save();
 
                     TempData["DataUrl"] = "data-url=/User";
                     return RedirectToAction("Index");
@@ -121,7 +128,7 @@ namespace MvcApplicationForMobile.Controllers
                 }
 
                 user.Timestamp = databaseValues.Timestamp;
-                
+
                 return View("Edit", user);
             }
             catch
@@ -163,7 +170,7 @@ namespace MvcApplicationForMobile.Controllers
                     }
                 }
 
-                user = db.Users.Find(userID);
+                user = userRepository.GetUserByID(userID);
 
                 if (user.IsDeleted == true)
                 {
@@ -178,15 +185,13 @@ namespace MvcApplicationForMobile.Controllers
                         + "Please confirm the Delete operation or click the Back button.");
                     ViewBag.ButtonsDisabled = true;
                     ViewBag.ConfirmDeletionButton = true;
-                    return View("Edit", user); 
+                    return View("Edit", user);
                 }
 
                 user.Timestamp = timestamp;
-                user.IsDeleted = true;
-                user.DateModified = DateTime.Now;
 
-                db.Entry(user).State = EntityState.Modified;
-                db.SaveChanges();
+                userRepository.DeleteUser(user.UserID);
+                userRepository.Save();
 
             }
             catch (DbUpdateConcurrencyException ex)
@@ -204,10 +209,10 @@ namespace MvcApplicationForMobile.Controllers
                 return View("Edit", user);
 
             }
-            catch 
+            catch
             {
                 TempData["DataUrl"] = "data-url=/User";
-                return RedirectToAction("Index", "User", new {errorOccurred = true });
+                return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
 
             TempData["DataUrl"] = "data-url=/User";
@@ -221,7 +226,7 @@ namespace MvcApplicationForMobile.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            userRepository.Dispose();
             base.Dispose(disposing);
         }
     }

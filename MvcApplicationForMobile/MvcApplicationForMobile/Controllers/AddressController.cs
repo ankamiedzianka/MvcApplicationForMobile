@@ -7,13 +7,25 @@ using System.Web;
 using System.Web.Mvc;
 using MvcApplicationForMobile.Models;
 using System.Data.Entity.Infrastructure;
+using System.Text;
+using System.Data.Entity.Validation;
+using MvcApplicationForMobile.DAL;
 
 namespace MvcApplicationForMobile.Controllers
 {
     public class AddressController : Controller
     {
-        private UserContext db = new UserContext();
+        private IAddressRepository addressRepository;
         private string defaultErrorMessage = "Error occurred.";
+
+         public AddressController()
+        {
+            this.addressRepository = new AddressRepository(new UserContext());
+        }
+        public AddressController(IAddressRepository addressRepository)
+        {
+            this.addressRepository = addressRepository;
+        }
 
         public ActionResult Create(int userID, bool? errorOccurred)
         {
@@ -32,10 +44,8 @@ namespace MvcApplicationForMobile.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    address.DateAdded = DateTime.Now;
-
-                    db.Addresses.Add(address);
-                    db.SaveChanges();
+                    addressRepository.InsertAddress(address);
+                    addressRepository.Save();
 
                     TempData["DataUrl"] = "data-url=/User/Edit/" + address.UserID.ToString();
                     return RedirectToAction("Edit", "User", new { id = address.UserID });
@@ -47,7 +57,7 @@ namespace MvcApplicationForMobile.Controllers
                 return RedirectToAction("Create", "Address", new { errorOccurred = true });
             }
 
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "FirstName", address.UserID);
+            ViewBag.UserID = address.UserID;
             return View(address);
         }
 
@@ -59,7 +69,7 @@ namespace MvcApplicationForMobile.Controllers
                 return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
 
-            Address address = db.Addresses.Find(id);
+            Address address = addressRepository.GetAddressByID(id);
 
             if (address.IsDeleted == true)
             {
@@ -75,14 +85,14 @@ namespace MvcApplicationForMobile.Controllers
         {
             try
             {
-                address.User = db.Users.Where(u => u.UserID == address.UserID).Single();
+                //address.User = 
+                  //  db.Users.Where(u => u.UserID == address.UserID).Single();
 
                 if (ModelState.IsValid)
                 {
-                    address.DateModified = DateTime.Now;
-                    
-                    db.Entry(address).State = EntityState.Modified;
-                    db.SaveChanges();
+
+                    addressRepository.UpdateAddress(address);
+                    addressRepository.Save();
 
                     TempData["DataUrl"] = "data-url=/User/Edit/" + address.UserID;
                     return RedirectToAction("Edit", "User", new { id = address.UserID });
@@ -158,7 +168,7 @@ namespace MvcApplicationForMobile.Controllers
                     }
                 }
 
-                address = db.Addresses.Find(addressID);
+                address = addressRepository.GetAddressByID(addressID);
 
                 if (address.IsDeleted == true)
                 {
@@ -177,11 +187,9 @@ namespace MvcApplicationForMobile.Controllers
                 }
 
                 address.Timestamp = timestamp;
-                address.IsDeleted = true;
-                address.DateModified = DateTime.Now;
 
-                db.Entry(address).State = EntityState.Modified;
-                db.SaveChanges();
+                addressRepository.DeleteAddress(addressID);
+                addressRepository.Save();
 
             }
             catch (DbUpdateConcurrencyException ex)
@@ -211,7 +219,7 @@ namespace MvcApplicationForMobile.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            addressRepository.Dispose();
             base.Dispose(disposing);
         }
     }

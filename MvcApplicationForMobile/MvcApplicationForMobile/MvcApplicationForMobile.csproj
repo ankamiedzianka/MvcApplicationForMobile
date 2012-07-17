@@ -89,8 +89,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DAL\AddressRepository.cs" />
+    <Compile Include="DAL\IAddressRepository.cs" />
+    <Compile Include="DAL\IUserRepository.cs" />
     <Compile Include="DAL\UserContext.cs" />
     <Compile Include="DAL\UserInitializer.cs" />
+    <Compile Include="DAL\UserRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
