@@ -15,16 +15,12 @@ namespace MvcApplicationForMobile.Controllers
 {
     public class UserController : Controller
     {
-        private IUserRepository userRepository;
+        private IUnitOfWork unitOfWork;
         private string defaultErrorMessage = "Error occurred.";
 
-        public UserController()
+        public UserController(IUnitOfWork unitOfWork)
         {
-            this.userRepository = new UserRepository(new UserContext());
-        }
-        public UserController(IUserRepository userRepository)
-        {
-            this.userRepository = userRepository;
+            this.unitOfWork = unitOfWork;
         }
 
         public ViewResult Index(bool? errorOccurred)
@@ -34,7 +30,7 @@ namespace MvcApplicationForMobile.Controllers
                 ViewBag.ErrorMessage = defaultErrorMessage;
             }
 
-            var users = userRepository.GetUsers();
+            var users = unitOfWork.UserRepository.GetUsers();
 
             return View(users);
         }
@@ -51,8 +47,8 @@ namespace MvcApplicationForMobile.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    userRepository.InsertUser(user);
-                    userRepository.Save();
+                    unitOfWork.UserRepository.InsertUser(user);
+                    unitOfWork.Save();
 
                     TempData["DataUrl"] = "data-url=/User";
                     return RedirectToAction("Index");
@@ -73,7 +69,7 @@ namespace MvcApplicationForMobile.Controllers
                 return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
 
-            User user = userRepository.GetUserByID(id);
+            User user = unitOfWork.UserRepository.GetUserByID(id);
 
             if (errorOccurred.GetValueOrDefault())
             {
@@ -96,8 +92,8 @@ namespace MvcApplicationForMobile.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    userRepository.UpdateUser(user);
-                    userRepository.Save();
+                    unitOfWork.UserRepository.UpdateUser(user);
+                    unitOfWork.Save();
 
                     TempData["DataUrl"] = "data-url=/User";
                     return RedirectToAction("Index");
@@ -170,7 +166,7 @@ namespace MvcApplicationForMobile.Controllers
                     }
                 }
 
-                user = userRepository.GetUserByID(userID);
+                user = unitOfWork.UserRepository.GetUserByID(userID);
 
                 if (user.IsDeleted == true)
                 {
@@ -190,8 +186,8 @@ namespace MvcApplicationForMobile.Controllers
 
                 user.Timestamp = timestamp;
 
-                userRepository.DeleteUser(user.UserID);
-                userRepository.Save();
+                unitOfWork.UserRepository.DeleteUser(user.UserID);
+                unitOfWork.Save();
 
             }
             catch (DbUpdateConcurrencyException ex)
@@ -226,7 +222,7 @@ namespace MvcApplicationForMobile.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            userRepository.Dispose();
+            unitOfWork.Dispose();
             base.Dispose(disposing);
         }
     }

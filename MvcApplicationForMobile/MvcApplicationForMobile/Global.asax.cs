@@ -8,6 +8,7 @@ using Microsoft.Web.Mvc;
 using System.Data.Entity;
 using MvcApplicationForMobile.Models;
 using MvcApplicationForMobile.DAL;
+using MvcApplicationForMobile.Infrastructure;
 
 namespace MvcApplicationForMobile
 {
@@ -32,9 +33,6 @@ namespace MvcApplicationForMobile
                 new { controller = "User", action = "Index", id = UrlParameter.Optional } // Parameter defaults
                 
             );
-
-
-
         }
 
         protected void Application_Start()
@@ -50,6 +48,8 @@ namespace MvcApplicationForMobile
             ViewEngines.Engines.Add(new MobileCapableRazorViewEngine());
             ViewEngines.Engines.Remove(ViewEngines.Engines.OfType<WebFormViewEngine>().First());
             ViewEngines.Engines.Add(new MobileCapableWebFormViewEngine());
+
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
         }
     }
 }

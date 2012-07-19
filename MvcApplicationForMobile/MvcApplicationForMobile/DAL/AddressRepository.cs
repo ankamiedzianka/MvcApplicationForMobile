@@ -7,7 +7,7 @@ using MvcApplicationForMobile.Models;
 
 namespace MvcApplicationForMobile.DAL
 {
-    public class AddressRepository : IAddressRepository, IDisposable
+    public class AddressRepository : IAddressRepository
     {
         private UserContext context;
 
@@ -46,7 +46,7 @@ namespace MvcApplicationForMobile.DAL
             context.Entry(address).State = EntityState.Modified;
         }
 
-        public void Save()
+       /* public void Save()
         {
             context.SaveChanges();
         }
@@ -69,6 +69,6 @@ namespace MvcApplicationForMobile.DAL
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
+        }*/
     }
 }

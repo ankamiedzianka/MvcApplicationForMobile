@@ -4,6 +4,7 @@ using System.Data.Entity;
 using MvcApplicationForMobile.Models;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
+
 namespace MvcApplicationForMobile.Models
 {
     public class UserContext : DbContext

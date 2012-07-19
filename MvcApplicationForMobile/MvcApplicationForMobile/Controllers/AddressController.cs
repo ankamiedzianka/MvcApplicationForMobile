@@ -15,16 +15,12 @@ namespace MvcApplicationForMobile.Controllers
 {
     public class AddressController : Controller
     {
-        private IAddressRepository addressRepository;
+        private IUnitOfWork unitOfWork;
         private string defaultErrorMessage = "Error occurred.";
 
-         public AddressController()
+        public AddressController(IUnitOfWork unitOfWork)
         {
-            this.addressRepository = new AddressRepository(new UserContext());
-        }
-        public AddressController(IAddressRepository addressRepository)
-        {
-            this.addressRepository = addressRepository;
+            this.unitOfWork = unitOfWork;
         }
 
         public ActionResult Create(int userID, bool? errorOccurred)
@@ -44,8 +40,8 @@ namespace MvcApplicationForMobile.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    addressRepository.InsertAddress(address);
-                    addressRepository.Save();
+                    unitOfWork.AddressRepository.InsertAddress(address);
+                    unitOfWork.Save();
 
                     TempData["DataUrl"] = "data-url=/User/Edit/" + address.UserID.ToString();
                     return RedirectToAction("Edit", "User", new { id = address.UserID });
@@ -69,7 +65,7 @@ namespace MvcApplicationForMobile.Controllers
                 return RedirectToAction("Index", "User", new { errorOccurred = true });
             }
 
-            Address address = addressRepository.GetAddressByID(id);
+            Address address = unitOfWork.AddressRepository.GetAddressByID(id);
 
             if (address.IsDeleted == true)
             {
@@ -91,8 +87,8 @@ namespace MvcApplicationForMobile.Controllers
                 if (ModelState.IsValid)
                 {
 
-                    addressRepository.UpdateAddress(address);
-                    addressRepository.Save();
+                    unitOfWork.AddressRepository.UpdateAddress(address);
+                    unitOfWork.Save();
 
                     TempData["DataUrl"] = "data-url=/User/Edit/" + address.UserID;
                     return RedirectToAction("Edit", "User", new { id = address.UserID });
@@ -168,7 +164,7 @@ namespace MvcApplicationForMobile.Controllers
                     }
                 }
 
-                address = addressRepository.GetAddressByID(addressID);
+                address = unitOfWork.AddressRepository.GetAddressByID(addressID);
 
                 if (address.IsDeleted == true)
                 {
@@ -188,8 +184,8 @@ namespace MvcApplicationForMobile.Controllers
 
                 address.Timestamp = timestamp;
 
-                addressRepository.DeleteAddress(addressID);
-                addressRepository.Save();
+                unitOfWork.AddressRepository.DeleteAddress(addressID);
+                unitOfWork.Save();
 
             }
             catch (DbUpdateConcurrencyException ex)
@@ -219,7 +215,7 @@ namespace MvcApplicationForMobile.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            addressRepository.Dispose();
+            unitOfWork.Dispose();
             base.Dispose(disposing);
         }
     }
