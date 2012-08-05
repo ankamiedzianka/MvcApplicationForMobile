@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="837a6fdc-2c15-4cc6-be2e-ce0a3442f4af" name="Administrator@ANNAMIEDZIAE6A9 2012-08-03 10:35:40" runUser="ANNAMIEDZIAE6A9\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="475efec6-518e-4b4a-870f-24bbcf8f6bdc">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_ANNAMIEDZIAE6A9 2012-08-03 10_35_40">
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\51Degrees.mobi.2.1.4.10\lib\NET40\FiftyOne.Foundation.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile.UnitTests\bin\Debug\Moq.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.MVC3.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.Web.Common.3.0.0.7\lib\net40-full\Ninject.Web.Common.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\MvcApplicationForMobile.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\WebActivator.1.5.1\lib\net40\WebActivator.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-03T10:35:40.6816406+01:00" queuing="2012-08-03T10:35:41.3320312+01:00" start="2012-08-03T10:35:41.6835937+01:00" finish="2012-08-03T10:35:47.3554687+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="21" executed="21" passed="13" error="0" failed="8" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCreate_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7">
+      <Execution id="6d6bfe05-2ced-4439-9f8c-8031a9abe7d8" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="8476ce07-e147-e9d4-c3f4-1943e00f0752">
+      <Execution id="90b9b9c6-e42d-4e85-a464-d4bd498e59c9" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="f1445818-ec65-8a5d-3176-1c403ae74468">
+      <Execution id="1df2b232-c3ce-4f93-841c-07a3a6259f86" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="6f24fb14-d3e5-9ccb-755e-3abafcd30d83">
+      <Execution id="7c62daf9-0d36-4055-bc4d-c0e047d549c0" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenError_ReturnEditViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd">
+      <Execution id="aee30b55-8e1b-4aac-a5db-345d8ae0c33c" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenError_ReturnEditViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenNoError_InsertUserAndReturnIndexView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="a3a94bd0-98a7-feec-ce6a-6c577b056e9c">
+      <Execution id="b51dd2eb-8f42-4d0f-aabc-a41a5393c6db" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenNoError_InsertUserAndReturnIndexView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenNoError_ReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6">
+      <Execution id="6f7b5600-e02c-4afa-b925-6682b547af26" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenNoError_ReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestUserController_Constructor" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6">
+      <Execution id="11568ff1-4486-4296-a158-f04f5045c83c" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestUserController_Constructor" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb">
+      <Execution id="4f64a2ea-6974-4f74-aa32-9ad8aaf0affc" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="EditTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="196634cc-0681-20ee-e430-3329a8b44a4e">
+      <Execution id="1afa9edd-cf1e-4b42-b0e5-d7c207f91bf9" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="27e47419-0c7b-cb9a-6c49-459f353abb27">
+      <Execution id="01350fd8-f58d-4a1f-ac8d-9199f9f5babe" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="TestIndex_WhenNoError_ReturnIndexView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="05386fb9-7ad3-7cac-052c-1a7c6123cb1b">
+      <Execution id="1fe047ab-bbcc-4144-a47d-bee3952255ff" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIndex_WhenNoError_ReturnIndexView" />
+    </UnitTest>
+    <UnitTest name="EditTest1" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="92cb29da-4648-f0e5-a599-2988c2a3f4ff">
+      <Execution id="1438d285-9cee-4bc9-a546-6176abdb422c" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditTest1" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestDelete_ReturnDeleteView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="5af886c7-4280-fc4b-69b8-fd6d0f7635b0">
+      <Execution id="4becfcbc-a7b7-4380-acb6-5a38dafc1e54" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDelete_ReturnDeleteView" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="ee4fbfb3-aefb-06f4-df89-cb84e4996273">
+      <DeploymentItems>
+        <DeploymentItem filename="MvcApplicationForMobile.dll" />
+      </DeploymentItems>
+      <Execution id="246f8ebd-ee8b-438b-b01f-8d30407f42d2" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="ffa2cda9-36ab-a66c-861d-026263571203">
+      <Execution id="e119d8d2-30e4-4a5c-8424-00774903b2ff" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="CreateTest1" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="d2d0557f-d902-af89-fc34-fd3cd5006555">
+      <Execution id="a1de8e0f-57cf-4f53-8d56-b568816bf73c" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest1" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DeleteConfirmedTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="42eab21e-6dcc-7827-6cf0-0715bba30e99">
+      <Execution id="fae1f38f-7ff3-419b-9e8f-8bdc2304ec7a" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteConfirmedTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestProblem_ReturnError" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="d05f305c-6fb6-7eba-236f-cadd5c008ce2">
+      <Execution id="1e261ed7-5691-430b-ac04-d5ef18eb126d" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestProblem_ReturnError" />
+    </UnitTest>
+    <UnitTest name="AddressControllerConstructorTest" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="041fb211-5f31-5fa2-238b-c0a6d6eb94af">
+      <Execution id="7e36d5fe-5a2c-4b1c-bc25-a5e6abcb230f" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.AddressControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddressControllerConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:1094/">
+        <Host pathToWebApp="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="447b9838-e209-c57d-7a4c-8da487f85942">
+      <Execution id="4f3d00a1-c5b7-4681-a69f-01bda5180195" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd" executionId="aee30b55-8e1b-4aac-a5db-345d8ae0c33c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="041fb211-5f31-5fa2-238b-c0a6d6eb94af" executionId="7e36d5fe-5a2c-4b1c-bc25-a5e6abcb230f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="05386fb9-7ad3-7cac-052c-1a7c6123cb1b" executionId="1fe047ab-bbcc-4144-a47d-bee3952255ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7" executionId="6d6bfe05-2ced-4439-9f8c-8031a9abe7d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="196634cc-0681-20ee-e430-3329a8b44a4e" executionId="1afa9edd-cf1e-4b42-b0e5-d7c207f91bf9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27e47419-0c7b-cb9a-6c49-459f353abb27" executionId="01350fd8-f58d-4a1f-ac8d-9199f9f5babe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42eab21e-6dcc-7827-6cf0-0715bba30e99" executionId="fae1f38f-7ff3-419b-9e8f-8bdc2304ec7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="447b9838-e209-c57d-7a4c-8da487f85942" executionId="4f3d00a1-c5b7-4681-a69f-01bda5180195" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5af886c7-4280-fc4b-69b8-fd6d0f7635b0" executionId="4becfcbc-a7b7-4380-acb6-5a38dafc1e54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f24fb14-d3e5-9ccb-755e-3abafcd30d83" executionId="7c62daf9-0d36-4055-bc4d-c0e047d549c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8476ce07-e147-e9d4-c3f4-1943e00f0752" executionId="90b9b9c6-e42d-4e85-a464-d4bd498e59c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6" executionId="11568ff1-4486-4296-a158-f04f5045c83c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92cb29da-4648-f0e5-a599-2988c2a3f4ff" executionId="1438d285-9cee-4bc9-a546-6176abdb422c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb" executionId="4f64a2ea-6974-4f74-aa32-9ad8aaf0affc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6" executionId="6f7b5600-e02c-4afa-b925-6682b547af26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3a94bd0-98a7-feec-ce6a-6c577b056e9c" executionId="b51dd2eb-8f42-4d0f-aabc-a41a5393c6db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d05f305c-6fb6-7eba-236f-cadd5c008ce2" executionId="1e261ed7-5691-430b-ac04-d5ef18eb126d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2d0557f-d902-af89-fc34-fd3cd5006555" executionId="a1de8e0f-57cf-4f53-8d56-b568816bf73c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee4fbfb3-aefb-06f4-df89-cb84e4996273" executionId="246f8ebd-ee8b-438b-b01f-8d30407f42d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1445818-ec65-8a5d-3176-1c403ae74468" executionId="1df2b232-c3ce-4f93-841c-07a3a6259f86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffa2cda9-36ab-a66c-861d-026263571203" executionId="e119d8d2-30e4-4a5c-8424-00774903b2ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aee30b55-8e1b-4aac-a5db-345d8ae0c33c" testId="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd" testName="TestEdit_WhenError_ReturnEditViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:02.2012283" startTime="2012-08-03T10:35:42.0205078+01:00" endTime="2012-08-03T10:35:44.8466796+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aee30b55-8e1b-4aac-a5db-345d8ae0c33c">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e36d5fe-5a2c-4b1c-bc25-a5e6abcb230f" testId="041fb211-5f31-5fa2-238b-c0a6d6eb94af" testName="AddressControllerConstructorTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:44.9980468+01:00" endTime="2012-08-03T10:35:45.0917968+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e36d5fe-5a2c-4b1c-bc25-a5e6abcb230f">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1fe047ab-bbcc-4144-a47d-bee3952255ff" testId="05386fb9-7ad3-7cac-052c-1a7c6123cb1b" testName="TestIndex_WhenNoError_ReturnIndexView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0290629" startTime="2012-08-03T10:35:45.1015625+01:00" endTime="2012-08-03T10:35:45.1445312+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fe047ab-bbcc-4144-a47d-bee3952255ff">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d6bfe05-2ced-4439-9f8c-8031a9abe7d8" testId="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7" testName="TestCreate_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0030610" startTime="2012-08-03T10:35:45.1523437+01:00" endTime="2012-08-03T10:35:45.1591796+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d6bfe05-2ced-4439-9f8c-8031a9abe7d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="1afa9edd-cf1e-4b42-b0e5-d7c207f91bf9" testId="196634cc-0681-20ee-e430-3329a8b44a4e" testName="EditTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.1650390+01:00" endTime="2012-08-03T10:35:45.1689453+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1afa9edd-cf1e-4b42-b0e5-d7c207f91bf9">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="01350fd8-f58d-4a1f-ac8d-9199f9f5babe" testId="27e47419-0c7b-cb9a-6c49-459f353abb27" testName="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.1035070" startTime="2012-08-03T10:35:45.1982421+01:00" endTime="2012-08-03T10:35:45.3251953+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01350fd8-f58d-4a1f-ac8d-9199f9f5babe">
+    </UnitTestResult>
+    <UnitTestResult executionId="fae1f38f-7ff3-419b-9e8f-8bdc2304ec7a" testId="42eab21e-6dcc-7827-6cf0-0715bba30e99" testName="DeleteConfirmedTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.3320312+01:00" endTime="2012-08-03T10:35:45.3349609+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fae1f38f-7ff3-419b-9e8f-8bdc2304ec7a">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f3d00a1-c5b7-4681-a69f-01bda5180195" testId="447b9838-e209-c57d-7a4c-8da487f85942" testName="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0046729" startTime="2012-08-03T10:35:45.3388671+01:00" endTime="2012-08-03T10:35:45.3574218+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f3d00a1-c5b7-4681-a69f-01bda5180195">
+    </UnitTestResult>
+    <UnitTestResult executionId="4becfcbc-a7b7-4380-acb6-5a38dafc1e54" testId="5af886c7-4280-fc4b-69b8-fd6d0f7635b0" testName="TestDelete_ReturnDeleteView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0016560" startTime="2012-08-03T10:35:45.3593750+01:00" endTime="2012-08-03T10:35:45.3671875+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4becfcbc-a7b7-4380-acb6-5a38dafc1e54">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c62daf9-0d36-4055-bc4d-c0e047d549c0" testId="6f24fb14-d3e5-9ccb-755e-3abafcd30d83" testName="CreateTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.3701171+01:00" endTime="2012-08-03T10:35:45.3759765+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c62daf9-0d36-4055-bc4d-c0e047d549c0">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="90b9b9c6-e42d-4e85-a464-d4bd498e59c9" testId="8476ce07-e147-e9d4-c3f4-1943e00f0752" testName="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0225280" startTime="2012-08-03T10:35:45.3789062+01:00" endTime="2012-08-03T10:35:45.4052734+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90b9b9c6-e42d-4e85-a464-d4bd498e59c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="11568ff1-4486-4296-a158-f04f5045c83c" testId="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6" testName="TestUserController_Constructor" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0027911" startTime="2012-08-03T10:35:45.4121093+01:00" endTime="2012-08-03T10:35:45.4199218+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11568ff1-4486-4296-a158-f04f5045c83c">
+    </UnitTestResult>
+    <UnitTestResult executionId="1438d285-9cee-4bc9-a546-6176abdb422c" testId="92cb29da-4648-f0e5-a599-2988c2a3f4ff" testName="EditTest1" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.4248046+01:00" endTime="2012-08-03T10:35:45.4277343+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1438d285-9cee-4bc9-a546-6176abdb422c">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f64a2ea-6974-4f74-aa32-9ad8aaf0affc" testId="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb" testName="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0051830" startTime="2012-08-03T10:35:45.4326171+01:00" endTime="2012-08-03T10:35:45.4492187+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f64a2ea-6974-4f74-aa32-9ad8aaf0affc">
+    </UnitTestResult>
+    <UnitTestResult executionId="6f7b5600-e02c-4afa-b925-6682b547af26" testId="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6" testName="TestEdit_WhenNoError_ReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0061250" startTime="2012-08-03T10:35:45.4511718+01:00" endTime="2012-08-03T10:35:45.4814453+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f7b5600-e02c-4afa-b925-6682b547af26">
+    </UnitTestResult>
+    <UnitTestResult executionId="b51dd2eb-8f42-4d0f-aabc-a41a5393c6db" testId="a3a94bd0-98a7-feec-ce6a-6c577b056e9c" testName="TestCreate_WhenNoError_InsertUserAndReturnIndexView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0619229" startTime="2012-08-03T10:35:45.4882812+01:00" endTime="2012-08-03T10:35:45.5546875+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b51dd2eb-8f42-4d0f-aabc-a41a5393c6db">
+    </UnitTestResult>
+    <UnitTestResult executionId="1e261ed7-5691-430b-ac04-d5ef18eb126d" testId="d05f305c-6fb6-7eba-236f-cadd5c008ce2" testName="TestProblem_ReturnError" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0022402" startTime="2012-08-03T10:35:45.5585937+01:00" endTime="2012-08-03T10:35:45.5673828+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e261ed7-5691-430b-ac04-d5ef18eb126d">
+    </UnitTestResult>
+    <UnitTestResult executionId="a1de8e0f-57cf-4f53-8d56-b568816bf73c" testId="d2d0557f-d902-af89-fc34-fd3cd5006555" testName="CreateTest1" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.5712890+01:00" endTime="2012-08-03T10:35:45.5742187+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1de8e0f-57cf-4f53-8d56-b568816bf73c">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="246f8ebd-ee8b-438b-b01f-8d30407f42d2" testId="ee4fbfb3-aefb-06f4-df89-cb84e4996273" testName="DisposeTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.5898437+01:00" endTime="2012-08-03T10:35:45.5927734+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="246f8ebd-ee8b-438b-b01f-8d30407f42d2">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1df2b232-c3ce-4f93-841c-07a3a6259f86" testId="f1445818-ec65-8a5d-3176-1c403ae74468" testName="DeleteTest" computerName="ANNAMIEDZIAE6A9" startTime="2012-08-03T10:35:45.5957031+01:00" endTime="2012-08-03T10:35:45.6093750+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1df2b232-c3ce-4f93-841c-07a3a6259f86">
+      <Output>
+        <ErrorInfo>
+          <Message>The ASP.NET Web application at 'C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile' is already configured for testing by another test run. Only one test run at a time can run tests in ASP.NET. If there are no other test runs using this Web application, ensure that the Web.config file does not contain an httpModule named HostAdapter.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e119d8d2-30e4-4a5c-8424-00774903b2ff" testId="ffa2cda9-36ab-a66c-861d-026263571203" testName="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0112458" startTime="2012-08-03T10:35:45.6123046+01:00" endTime="2012-08-03T10:35:45.6269531+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e119d8d2-30e4-4a5c-8424-00774903b2ff">
+    </UnitTestResult>
+  </Results>
+</TestRun>

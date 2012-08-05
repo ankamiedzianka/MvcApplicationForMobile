@@ -6,13 +6,12 @@ using MvcApplicationForMobile.Models;
 
 namespace MvcApplicationForMobile.DAL
 {
-    public interface IUserRepository //: IDisposable
+    public interface IUserRepository
     {
         IEnumerable<User> GetUsers();
         User GetUserByID(int userID);
         void InsertUser(User user);
         void DeleteUser(int userID);
         void UpdateUser(User user);
-        //void Save();
     }
 }

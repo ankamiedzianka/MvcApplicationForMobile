@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplicationForMobile.UnitTests", "MvcApplicationForMobile.UnitTests\MvcApplicationForMobile.UnitTests.csproj", "{61FBF90C-8016-4823-A034-E4F05BAF9179}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MvcApplicationForMobile.vsmdi
@@ -23,6 +25,10 @@ Global
 		{20C7A347-4010-42FA-89D6-82AFC0AD8453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20C7A347-4010-42FA-89D6-82AFC0AD8453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20C7A347-4010-42FA-89D6-82AFC0AD8453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FBF90C-8016-4823-A034-E4F05BAF9179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FBF90C-8016-4823-A034-E4F05BAF9179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FBF90C-8016-4823-A034-E4F05BAF9179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FBF90C-8016-4823-A034-E4F05BAF9179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

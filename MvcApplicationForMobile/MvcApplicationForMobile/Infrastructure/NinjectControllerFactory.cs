@@ -24,8 +24,7 @@ namespace MvcApplicationForMobile.Infrastructure
         {
             public override void Load()
             {
-                //repositories & unit of work
-                Bind<IUnitOfWork>().To<UnitOfWork>(); ;
+                Bind<IUnitOfWork>().To<UnitOfWork>();
             }
         }  
     }

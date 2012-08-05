@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="51db7d01-7779-4290-ac4c-187af21546fc" name="Administrator@ANNAMIEDZIAE6A9 2012-08-03 16:47:08" runUser="ANNAMIEDZIAE6A9\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="475efec6-518e-4b4a-870f-24bbcf8f6bdc">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_ANNAMIEDZIAE6A9 2012-08-03 16_47_08">
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\51Degrees.mobi.2.1.4.10\lib\NET40\FiftyOne.Foundation.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile.UnitTests\bin\Debug\Moq.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.MVC3.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.Web.Common.3.0.0.7\lib\net40-full\Ninject.Web.Common.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\MvcApplicationForMobile.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\WebActivator.1.5.1\lib\net40\WebActivator.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-03T16:47:08.2304687+01:00" queuing="2012-08-03T16:47:13.4130859+01:00" start="2012-08-03T16:47:14.0966796+01:00" finish="2012-08-03T16:47:42.2578125+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e">
+      <Execution id="41757b1b-0f4a-4c3c-bf54-6d73adcb30ff" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e" executionId="41757b1b-0f4a-4c3c-bf54-6d73adcb30ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="41757b1b-0f4a-4c3c-bf54-6d73adcb30ff" testId="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e" testName="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:23.7691337" startTime="2012-08-03T16:47:14.4833984+01:00" endTime="2012-08-03T16:47:40.1269531+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41757b1b-0f4a-4c3c-bf54-6d73adcb30ff">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Error occurred.&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   at CallSite.Target(Closure , CallSite , Type , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at MvcApplicationForMobile.UnitTests.UserControllerTest.TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView() in C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile.UnitTests\Controllers\UserControllerTest.cs:line 374
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

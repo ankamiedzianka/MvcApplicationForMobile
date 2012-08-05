@@ -32,12 +32,12 @@ namespace MvcApplicationForMobile.Controllers
 
             var users = unitOfWork.UserRepository.GetUsers();
 
-            return View(users);
+            return View("Index",users);
         }
 
-        public ActionResult Create()
+        public ViewResult Create()
         {
-            return View();
+            return View("Create");
         }
 
         [HttpPost]
@@ -58,7 +58,7 @@ namespace MvcApplicationForMobile.Controllers
             {
                 ModelState.AddModelError(string.Empty, defaultErrorMessage);
             }
-            return View(user);
+            return View("Create",user);
         }
 
         public ActionResult Edit(int id, bool? errorOccurred)
@@ -82,7 +82,7 @@ namespace MvcApplicationForMobile.Controllers
                 ViewBag.ButtonsDisabled = true;
             }
 
-            return View(user);
+            return View("Edit",user);
         }
 
         [HttpPost]
@@ -131,12 +131,12 @@ namespace MvcApplicationForMobile.Controllers
             {
                 ModelState.AddModelError(string.Empty, defaultErrorMessage);
             }
-            return View(user);
+            return View("Edit",user);
         }
 
-        public ActionResult Delete()
+        public ViewResult Delete()
         {
-            return View();
+            return View("Delete");
         }
 
         [HttpPost, ActionName("Delete")]
@@ -215,7 +215,7 @@ namespace MvcApplicationForMobile.Controllers
             return RedirectToAction("Index", "User");
         }
 
-        public ActionResult Problem()
+        public ViewResult Problem()
         {
             return View("Error");
         }

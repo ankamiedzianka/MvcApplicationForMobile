@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5bc7caf9-f0d4-438d-93a6-ea7ad474996c" name="Administrator@ANNAMIEDZIAE6A9 2012-08-05 13:59:02" runUser="ANNAMIEDZIAE6A9\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="475efec6-518e-4b4a-870f-24bbcf8f6bdc">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_ANNAMIEDZIAE6A9 2012-08-05 13_59_02">
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\51Degrees.mobi.2.1.4.10\lib\NET40\FiftyOne.Foundation.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile.UnitTests\bin\Debug\Moq.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.MVC3.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\Ninject.Web.Common.3.0.0.7\lib\net40-full\Ninject.Web.Common.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile\bin\MvcApplicationForMobile.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll" />
+      <DeploymentItem filename="C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\packages\WebActivator.1.5.1\lib\net40\WebActivator.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-05T13:59:02.0322265+01:00" queuing="2012-08-05T13:59:04.1191406+01:00" start="2012-08-05T13:59:04.3417969+01:00" finish="2012-08-05T13:59:13.2343750+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="18" executed="18" passed="17" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCreate_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7">
+      <Execution id="5431c507-5b81-4b6e-a258-6c227be6b7c5" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenError_ConcurrencyException_ReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="c426070b-7cb3-135f-e4ff-48c22ea2a0a2">
+      <Execution id="374bed61-02c7-43bb-8095-5eade1bc65cd" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenError_ConcurrencyException_ReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestUserController_Constructor" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6">
+      <Execution id="c8ed9061-1dd4-4e3d-9596-639b43327784" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestUserController_Constructor" />
+    </UnitTest>
+    <UnitTest name="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="8476ce07-e147-e9d4-c3f4-1943e00f0752">
+      <Execution id="57db637f-64c0-4074-896a-cc9c54e41e1e" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenError_OtherException_ReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="10d305e1-6069-8f8a-af8d-f779f9b8dc0f">
+      <Execution id="32bc388f-76fc-40be-955e-a27dbc2cd079" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenError_OtherException_ReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenError_ReturnEditViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd">
+      <Execution id="796f1a29-9740-4952-a2c9-00ebb20fd849" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenError_ReturnEditViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenNoError_InsertUserAndReturnIndexView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="a3a94bd0-98a7-feec-ce6a-6c577b056e9c">
+      <Execution id="07b580a7-390c-450a-b02d-c6bfab2887c3" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenNoError_InsertUserAndReturnIndexView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenNoError_ReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6">
+      <Execution id="1d74b0a4-2c49-425a-847b-496783817c19" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenNoError_ReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenError_ModelStateNotValid_ReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="046623b2-f1ce-87f3-5bd5-faaeb2b00ccf">
+      <Execution id="fa688daa-63d3-41ff-898a-17cae894c3c5" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenError_ModelStateNotValid_ReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="27e47419-0c7b-cb9a-6c49-459f353abb27">
+      <Execution id="356e4b62-7d3d-43d3-8b40-13d388f360e1" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="TestIndex_WhenNoError_ReturnIndexView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="05386fb9-7ad3-7cac-052c-1a7c6123cb1b">
+      <Execution id="78833165-8536-4be1-a4a3-d190401cdabe" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIndex_WhenNoError_ReturnIndexView" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb">
+      <Execution id="5216d5bb-bba8-4b6f-bb79-6066cf9a61d6" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" />
+    </UnitTest>
+    <UnitTest name="TestDelete_ReturnDeleteView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="5af886c7-4280-fc4b-69b8-fd6d0f7635b0">
+      <Execution id="3eb2496e-98bb-4d1e-bf61-fc36fc67a847" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDelete_ReturnDeleteView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenNoError_EditUserAndReturnIndexView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="0ecb1500-5ecc-6e45-e2c8-d4bb09f5dd4b">
+      <Execution id="23358ad2-b031-4071-a094-48ba8d423638" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenNoError_EditUserAndReturnIndexView" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="ffa2cda9-36ab-a66c-861d-026263571203">
+      <Execution id="22616ac3-76c9-4f7c-906f-bf6b991ce791" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" />
+    </UnitTest>
+    <UnitTest name="TestProblem_ReturnError" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="d05f305c-6fb6-7eba-236f-cadd5c008ce2">
+      <Execution id="0ef4af91-2867-46d0-a703-5729b6201241" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestProblem_ReturnError" />
+    </UnitTest>
+    <UnitTest name="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e">
+      <Execution id="582f4aa8-21c2-41ed-be8f-f6551e2b5b68" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" />
+    </UnitTest>
+    <UnitTest name="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" storage="c:\visual studio\mvcmobileformobile\mvcapplicationformobile\mvcapplicationformobile.unittests\bin\debug\mvcapplicationformobile.unittests.dll" id="447b9838-e209-c57d-7a4c-8da487f85942">
+      <Execution id="15d0f78a-3a83-45c3-aae8-88e098d6ef10" />
+      <TestMethod codeBase="C:/Visual Studio/MVCMobileForMobile/MvcApplicationForMobile/MvcApplicationForMobile.UnitTests/bin/Debug/MvcApplicationForMobile.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MvcApplicationForMobile.UnitTests.UserControllerTest, MvcApplicationForMobile.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd" executionId="796f1a29-9740-4952-a2c9-00ebb20fd849" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="046623b2-f1ce-87f3-5bd5-faaeb2b00ccf" executionId="fa688daa-63d3-41ff-898a-17cae894c3c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="05386fb9-7ad3-7cac-052c-1a7c6123cb1b" executionId="78833165-8536-4be1-a4a3-d190401cdabe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7" executionId="5431c507-5b81-4b6e-a258-6c227be6b7c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ecb1500-5ecc-6e45-e2c8-d4bb09f5dd4b" executionId="23358ad2-b031-4071-a094-48ba8d423638" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10d305e1-6069-8f8a-af8d-f779f9b8dc0f" executionId="32bc388f-76fc-40be-955e-a27dbc2cd079" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27e47419-0c7b-cb9a-6c49-459f353abb27" executionId="356e4b62-7d3d-43d3-8b40-13d388f360e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="447b9838-e209-c57d-7a4c-8da487f85942" executionId="15d0f78a-3a83-45c3-aae8-88e098d6ef10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5af886c7-4280-fc4b-69b8-fd6d0f7635b0" executionId="3eb2496e-98bb-4d1e-bf61-fc36fc67a847" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8476ce07-e147-e9d4-c3f4-1943e00f0752" executionId="57db637f-64c0-4074-896a-cc9c54e41e1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e" executionId="582f4aa8-21c2-41ed-be8f-f6551e2b5b68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6" executionId="c8ed9061-1dd4-4e3d-9596-639b43327784" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb" executionId="5216d5bb-bba8-4b6f-bb79-6066cf9a61d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6" executionId="1d74b0a4-2c49-425a-847b-496783817c19" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3a94bd0-98a7-feec-ce6a-6c577b056e9c" executionId="07b580a7-390c-450a-b02d-c6bfab2887c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c426070b-7cb3-135f-e4ff-48c22ea2a0a2" executionId="374bed61-02c7-43bb-8095-5eade1bc65cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d05f305c-6fb6-7eba-236f-cadd5c008ce2" executionId="0ef4af91-2867-46d0-a703-5729b6201241" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffa2cda9-36ab-a66c-861d-026263571203" executionId="22616ac3-76c9-4f7c-906f-bf6b991ce791" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="796f1a29-9740-4952-a2c9-00ebb20fd849" testId="028609c1-9728-1cb8-fbe6-1c8af5f8e9fd" testName="TestEdit_WhenError_ReturnEditViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:04.8059049" startTime="2012-08-05T13:59:04.6630859+01:00" endTime="2012-08-05T13:59:10.2158203+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="796f1a29-9740-4952-a2c9-00ebb20fd849">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa688daa-63d3-41ff-898a-17cae894c3c5" testId="046623b2-f1ce-87f3-5bd5-faaeb2b00ccf" testName="TestEdit_WhenError_ModelStateNotValid_ReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.1888212" startTime="2012-08-05T13:59:10.2314453+01:00" endTime="2012-08-05T13:59:10.4335937+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa688daa-63d3-41ff-898a-17cae894c3c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="78833165-8536-4be1-a4a3-d190401cdabe" testId="05386fb9-7ad3-7cac-052c-1a7c6123cb1b" testName="TestIndex_WhenNoError_ReturnIndexView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0490900" startTime="2012-08-05T13:59:10.4873047+01:00" endTime="2012-08-05T13:59:10.5556640+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78833165-8536-4be1-a4a3-d190401cdabe">
+    </UnitTestResult>
+    <UnitTestResult executionId="5431c507-5b81-4b6e-a258-6c227be6b7c5" testId="0c0ff112-1fbc-5f26-10bc-0c6498b40ca7" testName="TestCreate_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0038150" startTime="2012-08-05T13:59:10.5595703+01:00" endTime="2012-08-05T13:59:10.5722656+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5431c507-5b81-4b6e-a258-6c227be6b7c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="23358ad2-b031-4071-a094-48ba8d423638" testId="0ecb1500-5ecc-6e45-e2c8-d4bb09f5dd4b" testName="TestEdit_WhenNoError_EditUserAndReturnIndexView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.2876100" startTime="2012-08-05T13:59:10.5742187+01:00" endTime="2012-08-05T13:59:10.8681640+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23358ad2-b031-4071-a094-48ba8d423638">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MvcApplicationForMobile.UnitTests.UserControllerTest.TestEdit_WhenNoError_EditUserAndReturnIndexView threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at MvcApplicationForMobile.UnitTests.UserControllerTest.TestEdit_WhenNoError_EditUserAndReturnIndexView() in C:\Visual Studio\MVCMobileForMobile\MvcApplicationForMobile\MvcApplicationForMobile.UnitTests\Controllers\UserControllerTest.cs:line 372
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="32bc388f-76fc-40be-955e-a27dbc2cd079" testId="10d305e1-6069-8f8a-af8d-f779f9b8dc0f" testName="TestEdit_WhenError_OtherException_ReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0065829" startTime="2012-08-05T13:59:10.8720703+01:00" endTime="2012-08-05T13:59:10.9033203+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32bc388f-76fc-40be-955e-a27dbc2cd079">
+    </UnitTestResult>
+    <UnitTestResult executionId="356e4b62-7d3d-43d3-8b40-13d388f360e1" testId="27e47419-0c7b-cb9a-6c49-459f353abb27" testName="TestCreate_WhenModelError_InvalidEmail_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0174759" startTime="2012-08-05T13:59:10.9062500+01:00" endTime="2012-08-05T13:59:10.9628906+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="356e4b62-7d3d-43d3-8b40-13d388f360e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="15d0f78a-3a83-45c3-aae8-88e098d6ef10" testId="447b9838-e209-c57d-7a4c-8da487f85942" testName="TestCreate_WhenModelError_EmptyStrings_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0096635" startTime="2012-08-05T13:59:10.9667969+01:00" endTime="2012-08-05T13:59:10.9814453+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15d0f78a-3a83-45c3-aae8-88e098d6ef10">
+    </UnitTestResult>
+    <UnitTestResult executionId="3eb2496e-98bb-4d1e-bf61-fc36fc67a847" testId="5af886c7-4280-fc4b-69b8-fd6d0f7635b0" testName="TestDelete_ReturnDeleteView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0082460" startTime="2012-08-05T13:59:10.9853515+01:00" endTime="2012-08-05T13:59:10.9960937+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3eb2496e-98bb-4d1e-bf61-fc36fc67a847">
+    </UnitTestResult>
+    <UnitTestResult executionId="57db637f-64c0-4074-896a-cc9c54e41e1e" testId="8476ce07-e147-e9d4-c3f4-1943e00f0752" testName="TestIndex_WhenError_ReturnIndexViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0179019" startTime="2012-08-05T13:59:10.9980469+01:00" endTime="2012-08-05T13:59:11.0214844+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57db637f-64c0-4074-896a-cc9c54e41e1e">
+    </UnitTestResult>
+    <UnitTestResult executionId="582f4aa8-21c2-41ed-be8f-f6551e2b5b68" testId="872c72b3-c5d0-24ea-aad5-81c94ee4fa4e" testName="TestEdit_WhenUserIsDeleted_AddModelErrorAndReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0195010" startTime="2012-08-05T13:59:11.0292969+01:00" endTime="2012-08-05T13:59:11.0566406+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="582f4aa8-21c2-41ed-be8f-f6551e2b5b68">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8ed9061-1dd4-4e3d-9596-639b43327784" testId="8fc70de0-e38c-c82f-bfb8-b908e96fa9f6" testName="TestUserController_Constructor" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0019139" startTime="2012-08-05T13:59:11.0595703+01:00" endTime="2012-08-05T13:59:11.0693359+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8ed9061-1dd4-4e3d-9596-639b43327784">
+    </UnitTestResult>
+    <UnitTestResult executionId="5216d5bb-bba8-4b6f-bb79-6066cf9a61d6" testId="99a8f5a3-d40d-5d3e-83f9-a3e7d91de6fb" testName="TestCreate_WhenModelError_TooLongStrings_ReturnCreateView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0149910" startTime="2012-08-05T13:59:11.0732422+01:00" endTime="2012-08-05T13:59:11.0908203+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5216d5bb-bba8-4b6f-bb79-6066cf9a61d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d74b0a4-2c49-425a-847b-496783817c19" testId="9bfbfd42-0e58-2bfc-9e9e-4f4dc36bb0e6" testName="TestEdit_WhenNoError_ReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0079552" startTime="2012-08-05T13:59:11.0937500+01:00" endTime="2012-08-05T13:59:11.1093750+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d74b0a4-2c49-425a-847b-496783817c19">
+    </UnitTestResult>
+    <UnitTestResult executionId="07b580a7-390c-450a-b02d-c6bfab2887c3" testId="a3a94bd0-98a7-feec-ce6a-6c577b056e9c" testName="TestCreate_WhenNoError_InsertUserAndReturnIndexView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0910101" startTime="2012-08-05T13:59:11.1162109+01:00" endTime="2012-08-05T13:59:11.2109375+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07b580a7-390c-450a-b02d-c6bfab2887c3">
+    </UnitTestResult>
+    <UnitTestResult executionId="374bed61-02c7-43bb-8095-5eade1bc65cd" testId="c426070b-7cb3-135f-e4ff-48c22ea2a0a2" testName="TestEdit_WhenError_ConcurrencyException_ReturnEditView" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0015700" startTime="2012-08-05T13:59:11.2148437+01:00" endTime="2012-08-05T13:59:11.2236328+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="374bed61-02c7-43bb-8095-5eade1bc65cd">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ef4af91-2867-46d0-a703-5729b6201241" testId="d05f305c-6fb6-7eba-236f-cadd5c008ce2" testName="TestProblem_ReturnError" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0078828" startTime="2012-08-05T13:59:11.2285156+01:00" endTime="2012-08-05T13:59:11.2382812+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ef4af91-2867-46d0-a703-5729b6201241">
+    </UnitTestResult>
+    <UnitTestResult executionId="22616ac3-76c9-4f7c-906f-bf6b991ce791" testId="ffa2cda9-36ab-a66c-861d-026263571203" testName="TestEdit_WhenUserIDIsZero_ReturnIndexViewAndErrorMessage" computerName="ANNAMIEDZIAE6A9" duration="00:00:00.0126060" startTime="2012-08-05T13:59:11.2402344+01:00" endTime="2012-08-05T13:59:11.2568359+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22616ac3-76c9-4f7c-906f-bf6b991ce791">
+    </UnitTestResult>
+  </Results>
+</TestRun>

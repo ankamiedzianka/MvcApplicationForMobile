@@ -37,7 +37,5 @@ namespace MvcApplicationForMobile.Models
                 return FirstName + " " + LastName;
             }
         }
-
-       
     }
 }

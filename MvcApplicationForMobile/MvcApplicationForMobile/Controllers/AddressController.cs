@@ -81,8 +81,6 @@ namespace MvcApplicationForMobile.Controllers
         {
             try
             {
-                //address.User = 
-                  //  db.Users.Where(u => u.UserID == address.UserID).Single();
 
                 if (ModelState.IsValid)
                 {

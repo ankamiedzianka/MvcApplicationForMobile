@@ -37,7 +37,6 @@ namespace MvcApplicationForMobile.DAL
             Address address = context.Addresses.Find(addressID);
             address.IsDeleted = true;
             address.DateModified = DateTime.Now;
-            //context.Addresses.Remove(address);
         }
 
         public void UpdateAddress(Address address)
@@ -45,30 +44,5 @@ namespace MvcApplicationForMobile.DAL
             address.DateModified = DateTime.Now;
             context.Entry(address).State = EntityState.Modified;
         }
-
-       /* public void Save()
-        {
-            context.SaveChanges();
-        }
-
-        private bool disposed = false;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    context.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }*/
     }
 }
